@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+
+var dotenv = require('dotenv');
+var main = require('../lib/main.js');
+var program = require('commander');
+
+program
+    .command('winlink')
+    //.arguments('[crArg]')
+    .option('-N, --name [name]', 'Set the name of the winlink')
+    .option('-P, --path [path]', 'Set the path of the winlink')
+    .option('-I, --icon [icon]', 'Set the icon of the winlink')
+    .option('-A, --action [action]', 'Set the action CREATE,UPDATE,DELETE,GET of the winlink')
+    .version(main.version)
+    .description('udo version')
+    .action(main.winlink);
+
+program.parse(process.argv);
