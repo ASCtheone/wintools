@@ -8,10 +8,10 @@ var program = require('commander');
 program
     .command('winlink')
     //.arguments('[crArg]')
-    .option('-N, --name [name]', 'Set the name of the winlink')
+    .option('-N, --winname [winname]', 'Set the name of the winlink')
     .option('-P, --path [path]', 'Set the path of the winlink')
     .option('-I, --icon [icon]', 'Set the icon of the winlink')
-    .option('-A, --action [act]', 'Set the action CREATE,UPDATE,DELETE,GET of the winlink')
+    .option('-A, --winaction [winaction]', 'Set the action CREATE,UPDATE,DELETE,GET of the winlink')
     .version(main.version)
     .description('udo version')
     .action(main.winlink);
