@@ -12,10 +12,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.5.1",
     "commander": "^2.15.0",
     "dotenv": "^5.0.1",
+    "figlet": "^1.2.0",
     "guid": "0.0.12",
     "inquirer": "^5.1.0",
+    "lodash": "^4.17.5",
     "node-filepicker": "^0.1.2",
     "regedit": "^2.2.7",
     "windows-elevate": "^1.0.1"
